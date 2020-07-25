@@ -1,0 +1,29 @@
+.profile-pic {
+    border-radius: 36px;
+    height: 45px;
+    width: 44px;
+    margin-left: 15px;
+}
+
+.bg-light {
+    background-color: #107d7d !important;
+    
+}
+nav a{
+    color: #ffffff !important;
+}
+
+svg{
+    color: white;
+    font-size: 19px;
+
+}
+.sub-header{
+    background-color: white;
+padding: 10px;
+}
+
+.sub-header span svg{
+    color: black;
+    margin: 0px 6px;
+}
