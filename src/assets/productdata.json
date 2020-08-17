@@ -1,0 +1,91 @@
+[
+	{
+        "id": 1,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 1",
+			"price": 110
+		},
+		{
+            "id": 2,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 2",
+			"price": 91
+		},
+		{
+            "id": 3,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 3",
+			"price": 94.5
+		},
+		{
+            "id": 4,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 4",
+			"price": 94.5
+		},
+		{
+            "id": 5,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 5",
+			"price": 94.5
+		},
+		{
+            "id": 6,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 6",
+			"price": 94.5
+		},
+		{
+            "id": 7,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 7",
+			"price": 94.5
+		},
+		{
+            "id": 8,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 8",
+			"price": 94.5
+		},
+		{
+            "id": 9,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 1",
+			"price": 94.5
+		},
+		{
+            "id": 10,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 9",
+			"price": 94.5
+		},
+		{
+            "id": 11,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 1",
+			"price": 94.5
+		},
+		{
+            "id": 12,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 10",
+			"price": 94.5
+		},
+		{
+            "id": 13,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 11",
+			"price": 94.5
+		},
+		{
+            "id": 14,
+			"imgUrl": "assets/Asset-3.png",
+			"name": "Product 12",
+			"price": 94.5
+		}
+        
+	]
+
+
+
+	

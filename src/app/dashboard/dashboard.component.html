@@ -1,250 +1,47 @@
 <app-header></app-header>
-<section>
-    <h3 class="subheader m-l-0">Sales Activity (95)</h3>
+<div class="row">
+
+
+<section class="col-9">
+    <h3 class="subheader m-l-0">Product Items</h3>
     <div class="row">
 
-        <div class="col">
-            <mat-card class="example-card">
+        <div class="col-3" *ngFor="let product of Products">
+            <mat-card class="example-card" >
                 <mat-card-content class="no-padding">
-                    <div class="row">
-                        <div class="col-8">
+                   
+                  <div>
                             <mat-card-header class="order-config">
-                                <mat-card-subtitle><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    <path fill-rule="evenodd" d="M5.5 5h4a.5.5 0 0 1 0 1H6.707l4.147 4.146a.5.5 0 0 1-.708.708L6 6.707V9.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5z"/>
-                                  </svg> New Order</mat-card-subtitle>
-                                <mat-card-subtitle class="order-config-sub">15% of this yesterday</mat-card-subtitle>
+                                <mat-card-subtitle><img src="{{product.imgUrl}}" alt=""></mat-card-subtitle>
+                                <mat-card-subtitle>{{product.name}}</mat-card-subtitle>
+                                <mat-card-subtitle ><button class="addtocart" (click)="addToCart(product)">Add to Cart</button></mat-card-subtitle>
                             </mat-card-header>
                         </div>
-                        <div class="col-3 sales-value">
-                            29
-                        </div>
-                    </div>
+                   
                 </mat-card-content>
 
 
             </mat-card>
-
+           
         </div>
-        <div class="col">
-            <mat-card class="example-card">
-                <mat-card-content class="no-padding">
-                        <div class="row">
-                                <div class="col-8">
-                                    <mat-card-header class="order-config">
-                                        <mat-card-subtitle><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                            <path fill-rule="evenodd" d="M5.5 5h4a.5.5 0 0 1 0 1H6.707l4.147 4.146a.5.5 0 0 1-.708.708L6 6.707V9.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5z"/>
-                                          </svg> New Order</mat-card-subtitle>
-                                        <mat-card-subtitle class="order-config-sub">15% of this yesterday</mat-card-subtitle>
-                                    </mat-card-header>
-                                </div>
-                                <div class="col-3 sales-value">
-                                    29
-                                </div>
-                            </div>
-                </mat-card-content>
-
-
-            </mat-card>
-        </div>
-        <div class="col">
-            <mat-card class="example-card">
-                <mat-card-content class="no-padding">
-                        <div class="row">
-                                <div class="col-8">
-                                    <mat-card-header class="order-config">
-                                        <mat-card-subtitle><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                            <path fill-rule="evenodd" d="M5.5 5h4a.5.5 0 0 1 0 1H6.707l4.147 4.146a.5.5 0 0 1-.708.708L6 6.707V9.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5z"/>
-                                          </svg> New Order</mat-card-subtitle>
-                                        <mat-card-subtitle class="order-config-sub">15% of this yesterday</mat-card-subtitle>
-                                    </mat-card-header>
-                                </div>
-                                <div class="col-3 sales-value">
-                                    29
-                                </div>
-                            </div>
-                </mat-card-content>
-
-
-            </mat-card>
-        </div>
-        <div class="col">
-            <mat-card class="example-card">
-                <mat-card-content class="no-padding">
-                        <div class="row">
-                                <div class="col-8">
-                                    <mat-card-header class="order-config">
-                                        <mat-card-subtitle><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                            <path fill-rule="evenodd" d="M5.5 5h4a.5.5 0 0 1 0 1H6.707l4.147 4.146a.5.5 0 0 1-.708.708L6 6.707V9.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5z"/>
-                                          </svg> New Order</mat-card-subtitle>
-                                        <mat-card-subtitle class="order-config-sub">15% of this yesterday</mat-card-subtitle>
-                                    </mat-card-header>
-                                </div>
-                                <div class="col-3 sales-value">
-                                    29
-                                </div>
-                            </div>
-                </mat-card-content>
-
-
-            </mat-card>
-        </div>
+      
     </div>
 </section>
 
-<div class="row">
-    <div class="col">
-        <section>
-            <mat-card class="no-padding">
-                <h3 class="subheader">Task</h3>
-                <hr>
-                <mat-card-content>
-                    <mat-accordion>
-
-                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    High(30)
-                                </mat-panel-title>
-
-                            </mat-expansion-panel-header>
-                            <p>I'm visible because I am open</p>
-                        </mat-expansion-panel>
-                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Medium(20)
-                                </mat-panel-title>
-
-                            </mat-expansion-panel-header>
-                            <p>I'm visible because I am open</p>
-                        </mat-expansion-panel>
-                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    low(15)
-                                </mat-panel-title>
-
-                            </mat-expansion-panel-header>
-                            <p>I'm visible because I am open</p>
-                        </mat-expansion-panel>
-
-                    </mat-accordion>
-
-                </mat-card-content>
-            </mat-card>
-
-        </section>
-    </div>
-    <div class="col">
-        <section>
-                <mat-card class="no-padding">
-                        <h3 class="subheader">Top Selling Variants</h3>
-                        <hr>
-                        <mat-card-content>
-                           <div class="row">
-                               <div class="col">
-                                    <mat-card-header>
-                                           
-                                            <mat-card-subtitle>Arbutus </mat-card-subtitle>
-                                            <mat-card-title>Marina <span class="skyblue">25</span></mat-card-title>
-                                          </mat-card-header>
-                                          <br>
-                                          <mat-card-header>
-                                           
-                                                <mat-card-subtitle>Arbutus </mat-card-subtitle>
-                                                <mat-card-title>Marina <span class="skyblue">25</span> </mat-card-title>
-                                              </mat-card-header>
-                               </div>
-                               <div class="col">
-                                    <mat-card-header>
-                                           
-                                            <mat-card-subtitle>Arbutus </mat-card-subtitle>
-                                            <mat-card-title>Marina <span class="skyblue">25</span> </mat-card-title>
-                                          </mat-card-header>
-                                          <br>
-                                          <mat-card-header>
-                                           
-                                                <mat-card-subtitle>Arbutus </mat-card-subtitle>
-                                                <mat-card-title>Marina <span class="skyblue">25</span> </mat-card-title>
-                                              </mat-card-header>
-                               </div>
-                           </div>
-                        </mat-card-content>
-                    </mat-card>
-        </section>
-    </div>
-</div>
-<div class="row">
-    <div class="col">
-            <section>
-                    <mat-card class="no-padding">
-                            <h3 class="subheader">Products</h3>
-                            <hr>
-                        <mat-card-content>
-                                <div id="demo" class="carousel slide" data-ride="carousel">
-
-                                        <!-- Indicators -->
-                                        <ul class="carousel-indicators">
-                                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                          <li data-target="#demo" data-slide-to="1"></li>
-                                          <li data-target="#demo" data-slide-to="2"></li>
-                                          <li data-target="#demo" data-slide-to="3"></li>
-                                        </ul>
-                                        
-                                        <!-- The slideshow -->
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <img src="assets/Asset-3.png" alt="fridge" >
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="assets/Asset-4.png" alt="tv" >
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="assets/Asset-5.png" alt="washing machine" >
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="assets/Asset-7.png" alt="showe" >
-                                          </div>
-                                          <div class="carousel-item">
-                                                <img src="assets/2.png" alt="trimmer" >
-                                              </div>
-                                        </div>
-                                        
-                                        <!-- Left and right controls -->
-                                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                          <span class="carousel-control-prev-icon"></span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                                          <span class="carousel-control-next-icon"></span>
-                                        </a>
-                                      </div>
-                                      
-                        </mat-card-content>
-                    </mat-card>
-                </section>
-    </div>
-    <div class="col">
-        <section> <mat-card class="no-padding">
-                <h3 class="subheader">Stock Details</h3>
-                <hr>
-            <mat-card-content>
-                <div class="row">
-                    <div class="col">
-    <img src="assets/Asset-6.png" alt="" width="215px">
-                    </div>
-                    <div class="col">
-                            <mat-card-subtitle>Low Stock Variants <span class="orange">30%</span>  </mat-card-subtitle>
-                            <mat-card-subtitle>Surplus <span class="blue">25</span> </mat-card-subtitle>
-                            <mat-card-subtitle>All Variants <span class="green">43%</span>  </mat-card-subtitle>
-
-                    </div>
-                </div>
-            </mat-card-content>
-        </mat-card> </section>
+<section class="col-3">
+        <h2>Cart Items</h2>
            
-    </div>
+<mat-card>
+        <table>
+                <tr><th>ID</th>  <th>Product </th> <th>Action</th> <th>Quantity</th></tr>
+                <tr *ngFor="let product of cartList | async"><td>  [id: {{product.id}}]</td> <td> {{product.name}}</td><td> <button (click)="deleteItem(product)">delete</button></td><td><select name="" id=""><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td></tr>
+            </table>
+<div class="buy">
+        <button class="buy-now">Buy Now</button>
+</div>
+            
+</mat-card>
+        
+</section>
+
 </div>
